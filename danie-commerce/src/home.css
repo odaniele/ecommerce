@@ -1,0 +1,205 @@
+body{
+    background-color: rgb(243, 241, 241);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f7c4a0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+header p{
+    margin: 10px 0;
+    font-size: 14px;
+    color:#9f21b8
+}
+
+img.logo {
+    width: 80%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+img.favoritos {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+header input {
+    color: rgba(17, 16, 16, 0.898);
+    font-size: 16px;
+    font-family: inherit;
+    background-color:  #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2);
+    width: 90%;
+    max-width: 340px;
+    height: 30px;
+    border-radius: 2px;
+    border-color: rgba(0, 0, 0, 0);
+    border: 1.5px solid transparent;
+    margin: 10px 0;
+}
+
+.botaoBusca {
+    background-color: #f087ea;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 9px;
+    margin: 10px o;
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    width: fit-content;
+}
+
+
+.botaoBusca:hover {
+    background-color: #f3a5e2;
+}
+
+.seletores{
+    background-color: #f7a8f3;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+select#lojas.filter, select#categorias.filter{
+    font-family: inherit;
+    color: #4d4c4d;
+    border-radius: 2px;
+    width: 90%;
+    max-width: 150px;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+    justify-content: center;
+}
+
+li {
+    width: 100%;
+    max-width: 180px;
+    height: 250px;
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    border-radius: 5%;
+    box-shadow: 0 0 12px rgba(68, 12, 51, 0.671);
+    transition: all 0.5s;
+    flex-direction: column;
+    padding: 10px;
+}
+
+li:hover {
+    transform: scale(1.2);
+}
+
+li img {
+    width: 70%;
+    justify-content: center;
+}
+
+li h1{
+    font-family: 'Helvetica Neue';
+    font-size: 12px;
+    text-align: center;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+a{
+    display: block;
+    margin: auto;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #fab7fa;
+    color: #c840e4;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+    font-family: 'Josefin Sans';
+}
+
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        height: 102px;
+        padding: 0 20px;
+    }
+
+    header p {
+        margin: 0 40px;
+    }
+
+    img.logo {
+        width: auto;
+        height: 100px;
+        margin-bottom: 0;
+    }
+
+    img.favoritos {
+        margin: auto;
+    }
+
+    header input {
+        margin: 0 20px;
+    }
+
+    .botaoBusca {
+        margin: 0;
+    }
+
+    .seletores {
+        flex-direction: row;
+        gap: 17px;
+    }
+
+    select#lojas.filter, select#categorias.filter {
+        width: 150px;
+    }
+}
+
+@media (min-width: 1024px) {
+    header p {
+        margin-left: auto;
+        text-align:center;
+    }
+
+    img.favoritos {
+        position: absolute;
+        margin-left: 500px;
+    }
+
+    header input {
+        margin-right: 410px;
+    }
+
+    .botaoBusca {
+        margin-left: 265px;
+    }
+}
